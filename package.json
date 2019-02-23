@@ -2,13 +2,34 @@
   "name": "usemap",
   "version": "1.0.0",
   "description": "simple react hook mimicking map function",
-  "main": "dist.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "babel index.js -o dist.js"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0-alpha.1",
+    "react-dom": ">=16.8.0-alpha.1"
+  },
+  "dependencies": {
+    "react-scripts": "^2.1.5"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.2.3",
+    "@babel/core": "7.2.2",
+    "@babel/preset-env": "7.3.1",
+    "@babel/preset-react": "7.0.0",
+    "react": ">=16.8.0-alpha.1",
+    "react-dom": ">=16.8.0-alpha.1"
+  },
+  "alias": {
+    "react": "./node_modules/react"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/harshattray/useMap.git"
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
   },
   "keywords": [
     "Hooks",
