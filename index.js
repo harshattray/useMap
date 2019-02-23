@@ -3,11 +3,9 @@ const mapHandler = data =>
     return value;
   });
 
-const useHooktest = (data, type, check) => {
+const useMap = (data, type, check) => {
   if (!Array.isArray(data)) return;
-  if (type === "map") {
-    return mapHandler(data);
-  }
+  return mapHandler(data);
 };
 
-export default useHooktest;
+export default useMap;

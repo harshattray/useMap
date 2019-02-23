@@ -11,13 +11,10 @@ var mapHandler = function mapHandler(data) {
   });
 };
 
-var useHooktest = function useHooktest(data, type, check) {
+var useMap = function useMap(data, type, check) {
   if (!Array.isArray(data)) return;
-
-  if (type === "map") {
-    return mapHandler(data);
-  }
+  return mapHandler(data);
 };
 
-var _default = useHooktest;
+var _default = useMap;
 exports.default = _default;
